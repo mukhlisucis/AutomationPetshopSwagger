@@ -20,9 +20,6 @@ public class UserAPI {
     public static String GET_USER_LOGOUT = Constant.BASE_URL+"/user/logout" ;
     public static String POST_CREATE_USER = Constant.BASE_URL+"/user" ;
 
-    @Step("Post new pet")
-    public void postNewPet(File json){
-        SerenityRest.given().contentType(ContentType.JSON).body(json);
-    }
+
 
 }
